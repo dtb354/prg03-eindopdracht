@@ -6,7 +6,7 @@ require_once "includes/actions.php";
 if (!isset($_GET['id'])) {
     $data = getWatches();
 } else {
-    $data = getwatchDetails($_GET['id']);
+    $data = getWatchDetails($_GET['id']);
 }
 
 //Set the header & output JSON so the client will know what to expect.

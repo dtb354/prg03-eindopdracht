@@ -37,7 +37,7 @@ function getPokemonData() {
  */
 function createPokemonCards(data) {
     console.log(data);
-    for (let pokemon of data.results){
+    for (let pokemon of data.result){
         // Create empty cards to use later when we got more data
         const pokemonCard = document.createElement('div');
         pokemonCard.classList.add('pokemon-card');
@@ -69,7 +69,6 @@ function getPokemonErrorHandler(error) {
     const message = document.createElement('div');
     message.classList.add('error');
     message.innerHTML = 'Er is een fout';
-
 }
 
 function fillPokemonCard(pokemon) {
